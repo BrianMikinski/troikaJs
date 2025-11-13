@@ -3,7 +3,13 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: #0a0a0a;
+  background-color: #0000;
+}
+
+.header-container {
+    background-color: whitesmoke;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 h1 {
