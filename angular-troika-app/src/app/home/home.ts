@@ -6,7 +6,7 @@ import { Text } from 'troika-three-text';
   selector: 'app-home',
   imports: [],
   templateUrl: './home.html',
-  styleUrl: './home.css'
+  styleUrl: './home.scss'
 })
 export class Home implements OnInit, AfterViewInit, OnDestroy {
   

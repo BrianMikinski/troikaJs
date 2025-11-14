@@ -1,5 +1,21 @@
 <p>
-    Welcome to the graph page
+    Welcome to the threeJs graphing examples
+    <label for="canvasSelect">Select Canvas:</label>
+    <select id="canvasSelect" (change)="onCanvasChange($event)">
+        <option value="">-- Choose a canvas --</option>
+        <option value="exampleOne">
+            Example 1
+        </option>
+        <option value="exampleTwo">
+            Example 2
+        </option>
+        <option value="exampleThree">
+            Example 3
+        </option>
+        <option value="exampleFour">
+            Example 4
+        </option>
+    </select>
 </p>
 
 <canvas #canvas></canvas>
