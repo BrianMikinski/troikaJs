@@ -1,21 +1,18 @@
-<p>
-    Welcome to the threeJs graphing examples
-    <label for="canvasSelect">Select Canvas:</label>
-    <select id="canvasSelect" (change)="onCanvasChange($event)">
-        <option value="">-- Choose a canvas --</option>
-        <option value="exampleOne">
-            Example 1
-        </option>
-        <option value="exampleTwo">
-            Example 2
-        </option>
-        <option value="exampleThree">
-            Example 3
-        </option>
-        <option value="exampleFour">
-            Example 4
-        </option>
-    </select>
-</p>
-
-<canvas #canvas></canvas>
+<div class="graph-container">
+    <div class="controls-bar">
+        <h2>ThreeJS Graphing Examples</h2>
+        <mat-form-field appearance="outline">
+            <mat-label>Select Canvas</mat-label>
+            <mat-select (selectionChange)="onCanvasChange($event)">
+                <mat-option value="">-- Choose a canvas --</mat-option>
+                <mat-option value="exampleOne">Example 1</mat-option>
+                <mat-option value="exampleTwo">Example 2</mat-option>
+                <mat-option value="exampleThree">Example 3</mat-option>
+                <mat-option value="exampleFour">Example 4</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="canvas-wrapper">
+        <canvas #canvas></canvas>
+    </div>
+</div>

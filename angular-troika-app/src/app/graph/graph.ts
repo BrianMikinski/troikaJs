@@ -1,11 +1,13 @@
 import { Component, OnInit, OnDestroy, ElementRef, ViewChild, AfterViewInit, signal, effect } from '@angular/core';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/Addons.js';
 import { Text } from 'troika-three-text';
 
 @Component({
     selector: 'app-graph',
-    imports: [],
+    imports: [MatSelectModule, MatFormFieldModule],
     templateUrl: './graph.html',
     styleUrl: './graph.scss'
 })
@@ -47,9 +49,8 @@ export class Graph implements AfterViewInit {
         });
     }
 
-    onCanvasChange($event: Event) {
-        const select = $event.target as HTMLSelectElement;
-        this.selectedCanvas.set(select.value as any);
+    onCanvasChange($event: any) {
+        this.selectedCanvas.set($event.value as any);
     }
 
     ngAfterViewInit(): void {

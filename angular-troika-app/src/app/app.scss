@@ -1,7 +1,11 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
 .container {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 64px);
   overflow: hidden;
   background-color: #0000;
 }
